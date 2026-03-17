@@ -24,3 +24,8 @@ for codigo, usuario in diccionario_usuarios.items():
         f"Correo electrónico: {usuario['correo_electronico']}, "
         f"Teléfono: {usuario['telefono']}"
     )
+
+codigo_aleatorio = random.choice(list(diccionario_usuarios.keys()))
+usuario_afortunado = diccionario_usuarios[codigo_aleatorio]
+
+print(f"O usuario chamado {usuario_afortunado['nome'].upper()} foi o afortunado!")
